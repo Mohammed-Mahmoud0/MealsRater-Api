@@ -9,3 +9,7 @@ from .serializers import MealSerializer, RatingSerializer
 class MealViewset(viewsets.ModelViewSet):
     queryset = Meal.objects.all()
     serializer_class = MealSerializer
+
+class RatingViewset(viewsets.ModelViewSet):
+    queryset = Rating.objects.all()
+    serializer_class = RatingSerializer
