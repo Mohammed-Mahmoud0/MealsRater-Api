@@ -7,6 +7,7 @@ class MealSerializer(serializers.ModelSerializer):
         model = Meal
         fields = ["id", "title", "description"]
 
+
 class RatingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rating
